@@ -1,18 +1,35 @@
-current_health = 200
-input("press (f) to get loadout informatioin")
-if 
+import time
 loadout = {
-    'primary_weapon' : "Assult Rifles" # make sure th program wworks bfore making more complex
-    'seconday_weapon' : "Pistols" # make sure th program wworks bfore making more complex
-    'perks' : "Quick revive, Scavenger"
-    'medkit' : "1"
-    'current_exp' : 5000
-    'exp_need_to_level' : 20000
-def lose_health ():
+    'primary_weapon' : "Assult Rifles",
+    'seconday_weapon' : "Pistols", 
+    'perks' : "Quick revive, Scavenger",
+    'medkit' : "1",
+    }
+exp_information = {
+    'current_exp' : 5000,
+    'exp_needed' : 200000,
+    'current_level' : 23,
+    }
+info = input("press (f) to get loadout informatioin: "
+             "press (e) to get exp information"
+             "or press (h) for controls")
+if info == "f":
+    print("loading...")
+    time.sleep(.5)
+    print(loadout)
+elif info == "e":
+    print("loading...")
+    time.sleep(.5)
+    print(exp_information)    
+
+    
+    
     
 
 
-while True : current_health > 0:
+
+
+    
     
     
         
